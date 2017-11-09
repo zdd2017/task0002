@@ -1,0 +1,36 @@
+练习1   
+
+1.单行文本框与多行文本框
+单行文本框通过input标签创建，多行文本框通过textarea创建。input值可通过input.value获取，对于textarea,innerHTML获取的是<textarea></textarea>
+之间的内容，而我们通过页面输入文本框的内容是获取不到的，只能通过textarea.value获取。
+input标签不能通过css设置宽度，textarea可以通过设置rows与cols来设置长宽。
+
+2.split()与join()
+字符串转换为数组用split()方法，数组转换为字符串用join()方法，它们是功能相反的方法。而给split()传递不同参数，结果也不同，如下：
+'1,2,3'.split()          ['1,2,3']
+'1,2,3'.split("")        ['1',',','2',',','3']
+'1,2,3'.split(",")       ['1','2','3']
+['1','2','3'].join()     '1,2,3'
+['1','2','3'].join("")   '123'
+['1','2','3'].join(",")     '1,2,3'
+split()中可传入正则表达式
+
+
+练习2
+
+Date对象的常见方法：
+
+getDate()	从 Date 对象返回一个月中的某一天 (1 ~ 31)。
+getTime()	返回 1970 年 1 月 1 日至今的毫秒数。
+//注意以下都是从0开始计数
+getDay()	从 Date 对象返回一周中的某一天 (0 ~ 6)。
+getMonth()	从 Date 对象返回月份 (0 ~ 11)。
+getFullYear()	从 Date 对象以四位数字返回年份。
+getHours()	返回 Date 对象的小时 (0 ~ 23)。
+getMinutes()	返回 Date 对象的分钟 (0 ~ 59)。
+getSeconds()	返回 Date 对象的秒数 (0 ~ 59)。
+
+两个Date对象相减得到的是相差的毫秒数
+
+
+练习3
